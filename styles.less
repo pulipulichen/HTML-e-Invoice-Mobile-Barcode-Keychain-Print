@@ -1,0 +1,88 @@
+// body {
+//   background-color: red;
+// }
+
+.frame {
+  // border: 1px solid #ccc;
+  border-style: solid;
+  border-image: linear-gradient(to right, #CCC, white 5%, white 95%, #CCC 100%);
+  border-image-slice: 0.5; /* Ensures the gradient covers the entire border */
+
+  border-width: 1px;
+  border-left-width: 0;
+  border-right-width: 0;
+
+  &.move-upper {
+    // position: relative;
+    // top: -2px;
+    border-top-width: 0;
+
+    // color: red;
+  }
+
+  &.move-left {
+    position: relative;
+    left: -1px;
+    border-left-width: 0;
+
+    // background-color: red;
+  }
+
+  &.move-left-2 {
+    position: relative;
+    left: -2px;
+    border-left-width: 0;
+
+    // background-color: red;
+  }
+
+  .frame-inner {
+    display: inline-block;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #CCC, white 10%, white 90%, #CCC 100%);
+    border-image-slice: 0.5; /* Ensures the gradient covers the entire border */
+
+    border-width: 1px;
+    border-top-width: 0;
+    border-bottom-width: 0;
+
+    width: 5.5cm;
+    height: 2.2cm;  
+  }
+
+  
+  display: inline-block;
+
+  .barcode {
+    display: block;
+    width: 5cm;
+    height: 1.3cm;
+    margin: auto;
+    margin-top: 0.2cm;
+    margin-bottom: -0.1cm;
+
+    // background-color: blue;
+  }
+  
+  .text {
+    width: 5cm;
+    height: 0.5cm;
+    font-size: 0.5cm;
+
+    text-align: center;
+    margin: auto;
+    margin-bottom: 0.1cm;
+
+    position: relative;
+    z-index: 1;
+    // background-color: green;
+  }
+}
+
+#output {
+  max-width: 27.9cm;
+  max-height: 19cm;
+  // margin: 1cm;
+
+  // background-color: aqua;
+}

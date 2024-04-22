@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Invoice Mobile Barcode Keychain Print</title>
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <script src="lib/JsBarcode.code39.min.js"></script>
+
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="lib/less.min.js"></script>
+    <script>
+      less = {
+        env: "development"
+      };
+    </script>
+    
+</head>
+<body>
+
+    <div id="input">
+        <form action="index.html" method="get">
+            <input type="text" name="barcode" value="/18L8W3Q" />
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <div id="output"><div class="frame"><div class="frame-inner">
+            <svg class="barcode"></svg>
+            <div class="text"></div>
+        </div></div></div>
+
+</body>
+</html>
+
